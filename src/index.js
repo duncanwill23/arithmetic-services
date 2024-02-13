@@ -6,7 +6,7 @@ app.use(cors());
 const port = 3000;
 
 app.get('/', (req, res) => {
-    res.send('Arithmentic service - Hello World!')
+    res.sendFile(__dirname + '/index.html');
 });
 
 app.listen(port);
